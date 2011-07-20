@@ -1,10 +1,28 @@
-Author:
-  J.P.Eiti Kimura
-
-UNICAMP - Universidade Estadual de Campinas
-DEB - Departamento de Engenharia Biomédica / Biomedical 
-FEE - Faculdade de Engenharia Elétrica / Electrical Enge
+Description
+-------------------------
 
 ImageB is open source software to visualize ultrasound bidimensional images from RF
-collected data.
+collected data. Check the tutorial file for more details: ImageB_Tutorial.pdf
 
+
+Folder's Contents:
+-------------------------
+
+bin - the binary version for MS-Windows platform.
+requirements: library required to compile and run ImageB.
+RF_samples: sample of RF data to be tested with ImageB
+src: it has the complete source code of project.
+
+-------------------------   
+
+This program has been implemented in the Ultrasound Laboratory of the Centre for Biomedical Engineering (CEB) by J. P. Eiti Kimura as part of the requirements to obtain his Master in Electrical Engineering, Biomedical Engineering area, at the Department Of Biomedical Engineering of the School of Electrical and Computing Engineering (DEB/FEEC) of the State University of Campinas (UNICAMP), Campinas, SP, Brasil. 
+
+------------------------
+
+J. P. Eiti Kimura                         E. T. Costa
+eitikimura[at]yahoo.com.br                educosta[at]ceb.unicamp.br
+
+Ultrasound Laboratory
+Center for Biomedical Engineering (CEB)
+UNICAMP
+2007-2011

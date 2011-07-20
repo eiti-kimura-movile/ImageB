@@ -1,0 +1,435 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>frmProcSinal</class>
+ <widget class="QWidget" name="frmProcSinal" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Signal Processing Setup</string>
+  </property>
+  <widget class="QGroupBox" name="grpSinal" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>481</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Signal Plotting</string>
+   </property>
+   <widget class="QwtPlot" name="plotRF" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="canvasBackground" >
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="canvasLineWidth" >
+     <number>1</number>
+    </property>
+    <property name="xTopAxis" stdset="0" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QwtPlot" name="plotEnv" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>221</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="canvasBackground" >
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="canvasLineWidth" >
+     <number>1</number>
+    </property>
+    <property name="xTopAxis" stdset="0" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpLimiar" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>481</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Processed Data and Preview</string>
+   </property>
+   <widget class="QwtPlot" name="plotSinal" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>211</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font" >
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="canvasBackground" >
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="canvasLineWidth" >
+     <number>1</number>
+    </property>
+    <property name="xTopAxis" stdset="0" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpGanho" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>481</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Gain and Threshold</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2" >
+    <property name="geometry" >
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>121</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Atenuation Window</string>
+    </property>
+    <widget class="QLabel" name="label_3" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>106</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Value:                %</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineAtVal" >
+     <property name="geometry" >
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>-30</string>
+     </property>
+    </widget>
+    <widget class="QwtCounter" name="cAtWinStart" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>1</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>10</double>
+     </property>
+     <property name="maxValue" >
+      <double>1000</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+    <widget class="QwtCounter" name="cAtWinEnd" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>1</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>10</double>
+     </property>
+     <property name="maxValue" >
+      <double>1000</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Gain Ramp (%)</string>
+    </property>
+    <widget class="QwtCounter" name="cRamp1" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>2</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>1</double>
+     </property>
+     <property name="maxValue" >
+      <double>100</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+    <widget class="QwtCounter" name="cRamp2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>2</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>1</double>
+     </property>
+     <property name="maxValue" >
+      <double>100</double>
+     </property>
+     <property name="value" >
+      <double>100</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3" >
+    <property name="geometry" >
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Threshold</string>
+    </property>
+    <widget class="QwtCounter" name="cLimiar" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>1</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>0.001</double>
+     </property>
+     <property name="maxValue" >
+      <double>100</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QwtPlot" name="plotGain" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>191</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="canvasBackground" >
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="canvasLineWidth" >
+     <number>1</number>
+    </property>
+    <property name="xTopAxis" stdset="0" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="botApply" >
+   <property name="geometry" >
+    <rect>
+     <x>410</x>
+     <y>540</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botCancel" >
+   <property name="geometry" >
+    <rect>
+     <x>330</x>
+     <y>540</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botReset" >
+   <property name="geometry" >
+    <rect>
+     <x>220</x>
+     <y>540</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Reset to Default</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="5" margin="6" />
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>QwtCounter</class>
+   <extends>QWidget</extends>
+   <header>qwt_counter.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

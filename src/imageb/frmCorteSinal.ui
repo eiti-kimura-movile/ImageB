@@ -1,0 +1,189 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>frmCorteSinal</class>
+ <widget class="QWidget" name="frmCorteSinal" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>477</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Signal Cut Configuration </string>
+  </property>
+  <widget class="QGroupBox" name="grpCorte" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>461</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Signal Time Cut</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
+     <rect>
+      <x>290</x>
+      <y>20</y>
+      <width>161</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Number of Points</string>
+    </property>
+    <widget class="QLabel" name="label_2" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>End:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Start:</string>
+     </property>
+    </widget>
+    <widget class="QwtCounter" name="cCut1" >
+     <property name="geometry" >
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>2</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>1</double>
+     </property>
+     <property name="maxValue" >
+      <double>900</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+    <widget class="QwtCounter" name="cCut2" >
+     <property name="geometry" >
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="numButtons" >
+      <number>2</number>
+     </property>
+     <property name="basicstep" stdset="0" >
+      <double>1</double>
+     </property>
+     <property name="maxValue" >
+      <double>900</double>
+     </property>
+     <property name="value" >
+      <double>0</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="botCancel" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>180</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botApply" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Apply</string>
+    </property>
+   </widget>
+   <widget class="QwtPlot" name="plotSinal" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>261</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="canvasBackground" >
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="canvasLineWidth" >
+     <number>1</number>
+    </property>
+    <property name="xTopAxis" stdset="0" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>QwtCounter</class>
+   <extends>QWidget</extends>
+   <header>qwt_counter.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

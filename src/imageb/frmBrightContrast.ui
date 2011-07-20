@@ -1,0 +1,179 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>frmBrightContrast</class>
+ <widget class="QWidget" name="frmBrightContrast" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>128</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Adjust Brightness/Contrast</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string/>
+   </property>
+   <widget class="QLabel" name="label" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>46</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Contrast:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Brightness:</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slideB" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximum" >
+     <number>200</number>
+    </property>
+    <property name="sliderPosition" >
+     <number>100</number>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance" >
+     <bool>false</bool>
+    </property>
+    <property name="tickPosition" >
+     <enum>QSlider::NoTicks</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slideC" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="maximum" >
+     <number>200</number>
+    </property>
+    <property name="sliderPosition" >
+     <number>100</number>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance" >
+     <bool>false</bool>
+    </property>
+    <property name="tickPosition" >
+     <enum>QSlider::NoTicks</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtB" >
+    <property name="geometry" >
+     <rect>
+      <x>240</x>
+      <y>80</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtC" >
+    <property name="geometry" >
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="botApply" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>10</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botCancel" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>40</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkPreview" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>71</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Preview</string>
+   </property>
+   <property name="checked" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

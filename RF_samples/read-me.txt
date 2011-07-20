@@ -1,0 +1,4 @@
+This directory has a group of rf data acquired from the CEB Ultrasound Laboratory
+and downloaded from web. 
+
+The dataset from Michigan University can be obtained from: http://bul.eecs.umich.edu/  
